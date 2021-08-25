@@ -1,0 +1,447 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+p,
+h2,
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.main {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.main
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  padding: 2%;
+  background: white;
+  width: 500px; /* This is going to be the width of the how to use box */
+  height: 340px; /* This is the height of the same as above */
+  left: calc(50vw - 250px); 
+  top: calc(50vh - 170px); 
+  border-radius: 20px;
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #ffffd7;
+  font-size: 70px;
+  margin: 0px;
+  letter-spacing: 5px;
+  text-shadow: 5px 5px 10px black;
+  /* width: 900px; */
+}
+
+.mainPage {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+.imageDiv {
+  width: 100px;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.151), rgba(36, 31, 35, 0.329)), url('./0d3e4a84ba9f77eef545736731c9e2a8.jpg');
+  /* background-image: url(./0d3e4a84ba9f77eef545736731c9e2a8.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position-y: -100px; */
+  background-attachment: fixed;
+}
+
+input[type=text] {
+  width: 500px;
+  border: none;
+  padding: 20px;
+  border-radius: 100px;
+  margin-top: 30px;
+  transition: 0.2s;
+  margin-bottom: 20px;
+  margin-right: 15px;
+
+}
+
+input[type=text]:focus {
+  box-shadow: 10px 10px 10px 10px  rgba(0, 0, 0, 0.507);
+  transform: scale(1.01);
+
+}
+
+
+::placeholder {
+  /* text-align: center; */
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+footer {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: #ffffd7;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.buttonClass {
+  border: none;
+  font-family: 'Cinzel Decorative', cursive;
+  text-shadow: 5px 5px 10px black;
+  color: ivory;
+  letter-spacing: 2px;
+  border-radius: 15px;
+  padding: 15px 25px 15px 25px;
+  background-color: rgb(44, 25, 19);
+  box-shadow: 5px 5px black;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+
+button {
+  transition: 0.2s;
+}
+
+
+.buttonClass:hover {
+  background-color: rgb(54, 31, 24);
+  box-shadow: 5px 5px 5px black;
+}
+
+
+
+
+.textDiv {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+.textDiv
+div {
+  display: flex;
+}
+
+.textDiv
+img {
+  width: 50%;
+}
+
+.textDiv
+p,
+.main
+p {
+  /* font-family: 'Cinzel Decorative', cursive; */
+  color: #4c3428;
+  font-size: 22px;
+  width: 50%;
+  padding: 20px;
+  line-height: 40px;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.main
+p {
+  width: 100%;
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 10px;
+  
+}
+
+
+h2 {
+  font-size: 40px;
+  font-family: 'Cinzel Decorative', cursive;
+  color: black;
+  padding: 20px;  
+}
+
+
+@media (max-width: 845px) {
+  .textDiv 
+  div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .textDiv
+  p,
+  .textDiv
+  img {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 670px) {
+
+  input[type=text] {
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+  }
+
+  .buttonClass {
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+  }
+
+  h1 {
+    padding-left: 20px;
+    
+  }
+}
+
+@media (max-width: 500px) {
+  input[type=text] {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+  }
+}
+
+
+@media (max-width: 465px) {
+ form {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+   align-items: center;
+ }
+
+.main
+p {
+  font-size: 20px;
+  width: 60%;
+  padding: 20px;
+}
+
+ .buttonClass {
+  width: 200px ;
+}
+
+h1 {
+  font-size: 60px;
+  padding: 30px;
+}
+
+input[type=text] {
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+}
+
+@media (max-width: 390px) {
+ 
+ h1 {
+   font-size: 45px;
+   padding: 30px 0px 30px 10px;
+ }
+
+ input[type=text] {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+ h2 {
+   font-size: 30px;
+ }
+
+ p {
+   font-size: 19px !important;
+   padding: 5px !important;
+ }
+
+ .textDiv {
+   margin-top: 80px;
+ }
+
+ img {
+   width: 100% !important;
+ }
+ 
+ }
+
+
+
+
+
+span {
+  margin-left: 1px;
+}
+
+.dots {
+  margin-left: 15px;
+}
+
+.dotOne {
+  margin-left: 8px;
+}
+
+.dotOne {
+  animation: animateOne 1s ease-in-out infinite;
+}
+
+@keyframes animateOne {
+  0%{
+    opacity: 0;
+  }
+
+  10%{
+    opacity: 0.5;
+  }
+
+  20%{
+    opacity: 1;
+  }
+
+  30%{
+    opacity: 1;
+  }
+
+  40%{
+    opacity: 1;
+  }
+
+  50%{
+    opacity: 1;
+  }
+
+  60%{
+    opacity: 1;
+  }
+
+  70%{
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+
+  90% {
+    opacity: 0.5;
+  }
+
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+.dotTwo {
+  animation: animateTwo 1s ease-in-out infinite;
+}
+
+@keyframes animateTwo {
+  0%{
+    opacity: 0;
+  }
+
+  20%{
+    opacity: 0.2;
+  }
+
+
+  30%{
+    opacity: 0.5;
+  }
+
+  40%{
+    opacity: 0.8;
+  }
+
+  50%, 100%{
+    opacity: 1;
+  }
+
+}
+
+
+
+.dotThree {
+  animation: animateThree 1s ease-in-out infinite;
+}
+
+@keyframes animateThree {
+  0%{
+    opacity: 0.2;
+  }
+
+  30%{
+    opacity: 0;
+  }
+
+  40%{
+    opacity: 0.5;
+  }
+
+  50%{
+    opacity: 1;
+  }
+
+  60%{
+    opacity: 1;
+  }
+
+  70%{
+    opacity: 1;
+  }
+
+  80%{
+    opacity: 1;
+  }
+
+  90%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0.5;
+  }
+}
+
+
